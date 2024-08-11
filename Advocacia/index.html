@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>E-commerce Landing page Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav id="nav">
+			<ul class="nav-common">
+				<li><a href="#">home</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+		</nav>
+		<div id="header-hero">
+			<div class="header-bg"> <img src="imgs/advocacia.jpg" alt="header-image" /> </div>
+			<div class="header-content">
+				<p class="heading-1">fighting for your rights</p>
+				<h1>wellcome to <span class="logo-style">suits</span> advocacy</h1>
+				<p class="description">where we provide personalized, effective legal solutions to meet your needs. Our team of experienced attorneys is dedicated to providing trusted guidance and robust defense. Trust us to protect your interests with excellence and commitment.</p>
+				<div class="button">
+					<button id="show-form-button" onclick="showForm()">Get in Touch</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="summer-collection">
+		<div class="container">
+			<div class="sc-content">
+				<h1>suits advocacy</h1>
+				<p class="description">Suits Advocacy is a leading law firm with a 92% success rate in litigation cases and a 98% client satisfaction rate in 2023. With a 15% increase in completed cases and a 20% expansion of its team, the company stands out for its excellence and innovation. Additionally, it dedicated over 2,000 hours of pro bono work to social causes, reinforcing its commitment to justice and social responsibility.</p>
+				<a href="#">discover now</a>
+			</div>
+			<div class="sc-media">
+				<div class="sc-media-bg"> <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_descriptive_statistics.jpg" alt="sc-image" /> </div>
+			</div>
+		</div>
+	</section>
+	<section id="products">
+		<div class="container">
+			<div class="products-header">
+				<h2>popular lawyers</h2>
+				<p>Meet our popular lawyers: dedicated specialists providing high-quality legal services with extensive experience and a commitment to justice.</p>
+			</div>
+			<div class="product product-1">
+				<figure> <img src="imgs/harvey.jpg" width="300px" height="300px">
+					<figcaption>Harvey Specter</figcaption>
+					<figcaption>$ 56.00</figcaption>
+				</figure>
+			</div>
+			<div class="product product-2">
+				<figure> <img src="imgs/paulsen.jpg" alt="product-image">
+					<figcaption>Donna Paulsen</figcaption>
+					<figcaption>$ 84.00</figcaption>
+				</figure>
+			</div>
+			<div class="product product-3">
+				<figure> <img src="imgs/mike.jpg" alt="product-image">
+					<figcaption>Mike Ross</figcaption>
+					<figcaption>$ 48.00</figcaption>
+				</figure>
+			</div>
+			<div class="product product-4">
+				<figure> <img src="imgs/sazs.jpg" alt="product-image">
+					<figcaption>Sheila Sazs</figcaption>
+					<figcaption>$ 89.00</figcaption>
+				</figure>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p class="copy-right"><img src="https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412543/E-commerce%20landing%20page/icons/copy-right-img_1x.png" alt="copy right image" /> 2017 all right recived </p>
+		<p>privacy policy</p>
+		<p>license</p>
+	</footer>
+	<div class="back-to-top"><a href="#nav"> <img title="Back to Top." src="https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412541/E-commerce%20landing%20page/icons/back_-_top_1x.png" alt="back to top"></a> </div>
+
+	<!-- Modal -->
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<h2>Contact Form</h2><br>
+			<form action="https://formsubmit.co/jonatavenancioo4@gmail.com" method="POST" onsubmit="handleSubmit(event)">
+				<label for="name">Name</label><br>
+				<input type="text" id="name" name="name" placeholder="Full name" required><br>
+				  <div class="form-group col-xs-12">
+					<label for="tel">Phone</label>
+					<input type="text" maxlength="12" class="form-control" id="tel" name="phone" placeholder="00-00000-0000">
+				  </div><br>
+				  <label for="message">Message</label>
+				  <input type="text" class="form-message" name="problem" placeholder="Specify your problem"><br>
+				<button type="submit">Send</button>
+			</form>
+		</div>
+	</div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
